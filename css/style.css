@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani&display=swap');
+
+body{
+    margin: 0;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 70px 750px 1px 1fr;
+    grid-template-areas: "header"
+    "slider"
+    "hr"
+    "horaire";
+}
+
+hr{grid-area: hr;
+opacity: 0.6;}
+
+li{
+    align-items: center;
+    text-align: center;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Titre nav";
+    grid-area: header;
+    background-color: #353535;
+    transition: 0.3s;
+    align-items: center;
+    box-shadow: 0 0 20px;
+}
+
+nav{
+    align-items: center;
+    grid-area: nav;
+    padding-left: 10px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Rajdhani;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    align-items: right;
+}
+
+nav a:hover{
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
+
+.accueil-bottom{
+    text-align: center;
+    grid-area: horaire;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: space;
+
+}
+
+
+.services{
+    flex-flow: space-around;
+
+}
+
+.ab-box{
+    position: relative;
+    top: 20px;
+    border: 6px solid #686363;
+    background-color: #353535;
+    margin: 20px;
+    margin-top: 50px;
+    width: 800px;
+    height: 800px;
+    border-radius: 20px;
+color: aliceblue;
+font-size: 35px;
+}
+
+#siteTitle{
+    color: #ffffff;
+    font-family: Anton;
+    font-size: 25px;
+    /* padding: 3px; */
+    height: auto;
+    margin: 0;
+    margin-left: 20px;
+    grid-area: Titre;
+    width: 100%;
+    padding-left: 10px;
+}
