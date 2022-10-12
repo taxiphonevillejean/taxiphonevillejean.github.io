@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous Contacter</title>
+    <link rel="stylesheet" href="/css/contacts.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+  </head>
+  <body>
+    <header>
+      <div id="siteTitle">Taxiphone Villejean</div>
+      <nav>
+        <div
+          class="button-menu dropdown"
+          id="buttonMenu"
+          onclick="buttonMenu(this)"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="longnav">
+          <a href="/index.html">Accueil</a>
+          <hr style="height: 40px; margin: 0; opacity: 0.6" />
+          <a href="">Tarifs</a>
+          <hr style="height: 40px; margin: 0; opacity: 0.6" />
+          <a href="/html/Epicerie.html">Epicerie</a>
+          <hr style="height: 40px; margin: 0; opacity: 0.6" />
+          <a href="/html/Contacts.html">Nous contacter</a>
+        </div>
+      </nav>
+      <div class="menu-container">
+        <span class="menu-container-button">Accueil</span>
+        <span class="menu-container-button">Tarifs</span>
+        <span class="menu-container-button">Epicerie</span>
+        <span class="menu-container-button">Nous contacter</span>
+      </div>
+    </header>
+
+    <div class="background"></div>
+
+    <h1 id="contact-title">Nous Contacter</h1>
+
+    <form action="mailto:ralayoubi56@gmail.com" method="post" class="form">
+      <div id="logo-box">
+        <span class="logo-contact" id="taxiphone"> Taxiphone </span>
+        <span class="logo-contact" id="villejean">Villejean</span>
+      </div>
+      <input
+        type="text"
+        id="email"
+        class="form-container"
+        name="email"
+        placeholder="Adresse E-mail"
+      /><br />
+      <textarea
+        id="mail-content"
+        rows="4"
+        cols="50"
+        name="comment"
+        placeholder="Message"
+      ></textarea>
+      <input id="mail-submit" type="submit" name="submit" value="Envoyer" />
+    </form>
+
+    <button onclick="window.location=`tel:+33647474788`" ; id="call">
+      Appeler
+    </button>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taxiphone Villejean</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/accueil.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link
       rel="apple-touch-icon"
@@ -33,14 +33,32 @@
     <header>
       <div id="siteTitle">Taxiphone Villejean</div>
       <nav>
-        <a href="">Accueil</a>
-        <hr style="height: 40px; margin: 0; opacity: 0.6" />
-        <a href="">Tarifs</a>
-        <hr style="height: 40px; margin: 0; opacity: 0.6" />
-        <a href="">Epicerie</a>
-        <hr style="height: 40px; margin: 0; opacity: 0.6" />
-        <a href="">Nous contacter</a>
+        <div
+          class="button-menu dropdown"
+          id="buttonMenu"
+          onclick="buttonMenu(this)"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="longnav">
+          <a href="">Accueil</a>
+          <hr style="height: 40px; margin: 0; opacity: 0.6" />
+          <a href="">Tarifs</a>
+          <hr style="height: 40px; margin: 0; opacity: 0.6" />
+          <a href="/html/Epicerie.html">Epicerie</a>
+          <hr style="height: 40px; margin: 0; opacity: 0.6" />
+          <a href="/html/Contacts.html">Nous contacter</a>
+        </div>
       </nav>
+      <div class="menu-container">
+        <span class="menu-container-button">Accueil</span>
+        <span class="menu-container-button">Tarifs</span>
+        <span class="menu-container-button">Epicerie</span>
+        <span class="menu-container-button">Nous contacter</span>
+      </div>
     </header>
 
     <div class="carousel">
@@ -70,56 +88,54 @@
       <div class="carousel-indicators"></div>
     </div>
 
-    <hr style="width: 1700px" />
+    <hr style="width: 90vw" />
 
     <div class="accueil-bottom">
       <div class="horaire ab-box">
         <h1>Horaire :</h1>
-    <hr style="width: 600px" />
+        <hr style="width: 30vw" />
 
-        <p>
-          Lundi : <br />
-    <hr style="width: 400px" />
+        <p class="ab-box-content">Lundi : 09:00 - 20:45<br /></p>
 
-          Mardi : <br />
-    <hr style="width: 400px" />
+        <hr style="width: 23vw" />
 
-          Mercredi : <br />
-    <hr style="width: 400px" />
+        Mardi : 09:00 - 20:45<br />
+        <hr style="width: 23vw" />
 
-          Jeudi : <br />
-    <hr style="width: 400px" />
+        Mercredi : 09:00 - 20:45<br />
+        <hr style="width: 23vw" />
 
-          Vendredi : <br />
-    <hr style="width: 400px" />
+        Jeudi : 09:00 - 20:45<br />
+        <hr style="width: 23vw" />
 
-
-    Samedi : <br />
-    <hr style="width: 400px" />
-
-          Dimanche :
-        </p>
+        Vendredi : 09:00 - 20:45<br />
+        <hr style="width: 23vw" />
+        Samedi : 09:00 - 20:45<br />
+        <hr style="width: 23vw" />
+        Dimanche : 10:00 - 20:45
       </div>
       <div class="services ab-box">
         <h1>Services :</h1>
-        <p id="service">
-          Western Union <br />
-    <hr style="width: 400px" />
+        <hr style="width: 30vw" />
 
-          MoneyGram <br />
-    <hr style="width: 400px" />
+        <p id="service" class="ab-box-content">Western Union <br /></p>
 
-          RIA <br />
-    <hr style="width: 400px" />
+        <hr style="width: 23vw" />
 
-          MoneyGlobe <br />
-    <hr style="width: 400px" />
+        MoneyGram <br />
+        <hr style="width: 23vw" />
 
-          MoneyTrans
-        </p>
+        RIA <br />
+        <hr style="width: 23vw" />
+
+        MoneyGlobe <br />
+        <hr style="width: 23vw" />
+
+        MoneyTrans
       </div>
     </div>
 
     <script src="/js/slider.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
