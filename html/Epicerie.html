@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epicerie</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/epicerie.css" />
     <link rel="stylesheet" href="/css/slider.css" />
   </head>
   <body>
@@ -33,11 +33,49 @@
         </div>
       </nav>
       <div class="menu-container">
-        <span class="menu-container-button">Accueil</span>
-        <span class="menu-container-button">Tarifs</span>
-        <span class="menu-container-button">Epicerie</span>
-        <span class="menu-container-button">Nous contacter</span>
+        <span class="menu-container-button" id="accueil-button">Accueil</span>
+        <span class="menu-container-button" id="tarifs-button">Tarifs</span>
+        <span class="menu-container-button" id="epicerie-button">Epicerie</span>
+        <span class="menu-container-button" id="contact-button"
+          >Nous contacter</span
+        >
       </div>
     </header>
+
+    <div class="ventes">
+      <div class="objet" id="ketchup">
+        <div
+          class="img-objet"
+          style="background: url(/img/Epicerie/ketchup.png) center/cover"
+        ></div>
+        <span class="title">Ketchup</span>
+        <span class="price">2,50€</span>
+        <span class="quantity">400g</span>
+      </div>
+
+      <div class="objet" id="mayo">
+        <div
+          class="img-objet"
+          style="background: url(/img/Epicerie/mayo.png) center/cover"
+        ></div>
+        <span class="title">Mayonnaise</span>
+        <span class="price">2,00€</span>
+        <span class="quantity">250g</span>
+      </div>
+      <div class="objet">Moutarde</div>
+      <div class="objet">Ice Tea</div>
+      <div class="objet">Ice Tea</div>
+      <div class="objet">Ice Tea</div>
+    </div>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>
+
+<!-- <div class="objet" id="">
+  <div class="img-objet" id="img-objet1"></div>
+  <span class="title"></span>
+  <span class="price"></span>
+  <span class="quantity"></span>
+  <span class="ingredient">Voir plus</span>
+</div> -->

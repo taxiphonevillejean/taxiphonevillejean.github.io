@@ -1,11 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #353535;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
   background-color: #353535;
   margin: 0;
   margin-bottom: 30px;
   width: 100vw;
-  color: white;
   overflow-x: hidden;
 }
 
@@ -26,7 +45,7 @@ header {
   align-items: center;
   width: 100vw;
   box-shadow: 0 0px 15px;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 
 #siteTitle {
@@ -103,94 +122,59 @@ nav .longnav a:hover {
   background-color: #454545;
 }
 
-.background {
-  border: 2px solid;
-  z-index: -3;
-  height: 75vh;
-  width: 100vw;
-  position: absolute;
-  top: 17vh;
-  background: url(/img/fond-contact.jpg) no-repeat center/cover;
-  filter: blur(4px);
-}
-
-#contact-title {
-  text-align: center;
-  font-family: sans-serif;
-  /* color: #f7d600; */
-  text-shadow: 1px 1px 3px black;
-  font-size: 3rem;
-}
-
-form {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 35vw 1fr;
-  grid-template-rows: 7vh 20vh 7vh;
-  grid-column-gap: 0px;
-  grid-row-gap: 40px;
-}
-
-form input,
-textarea {
-  border-radius: 10px;
-  border: 1px solid gray;
-  padding: 10px;
-  resize: none;
-}
-
-button:hover,
-input[type="submit"]:hover {
-  background-color: #cccccc;
-}
-
-button,
-input[type="submit"] {
-  cursor: pointer;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  border: 1px solid gray;
-}
-
-#email {
-  grid-area: 1 / 2 / 2 / 3;
-}
-#mail-content {
-  grid-area: 2 / 2 / 3 / 3;
-}
-#mail-submit {
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-#logo-box {
-  /* border: 2px solid; */
-  grid-area: 1 / 1 / 4 / 2;
+.ventes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  z-index: -1;
+  align-content: stretch;
+  margin: 0;
+  padding: 0;
 }
 
-.logo-contact {
-  font-size: 5vw;
-  font-family: Anton;
-  position: relative;
-}
-
-#taxiphone {
-  color: #f7d600;
-}
-
-#villejean {
-}
-
-#call {
+.objet {
+  width: 18vw;
+  height: 60vh;
   border-radius: 10px;
-  width: 10vw;
-  height: 7vh;
-  position: relative;
-  left: 11.5vw;
-  top: -7vh;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vw 1fr 1fr;
+  grid-template-areas:
+    "img img"
+    "title title"
+    "price quantity";
+  text-align: center;
+  font-family: Rajdhani;
+  font-weight: bold;
+  font-size: large;
+}
+.title {
+  grid-area: title;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+}
+.price {
+  grid-area: price;
+  font-size: 1.6rem;
+  border-right: 1px solid;
+  padding-top: 2vh;
+}
+.quantity {
+  grid-area: quantity;
+  font-size: 1.6rem;
+
+  padding-top: 2vh;
+}
+.img-objet {
+  height: auto;
+  width: 100%;
+  grid-area: img;
+  box-shadow: 0 0 12px;
+  margin-bottom: 2vh;
 }
 
 @media screen and (max-width: 970px) {
@@ -203,28 +187,31 @@ input[type="submit"] {
     width: 65vw;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 99vw;
-    margin: 0;
-  }
-
-  #logo-box {
-    /* border: 2px solid; */
-    grid-area: 1 / 1 / 4 / 2;
-    align-items: left;
-    justify-content: left;
-    z-index: -1;
-  }
-
-  #call {
+  .objet {
+    width: 100vw;
+    height: 80vh;
     border-radius: 10px;
-    width: 40vw;
-    height: 7vh;
-    position: relative;
-    left: 29vw;
-    top: 6vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "img img"
+      "title title"
+      "price quantity";
+    text-align: center;
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .img-objet {
+    height: 100vw;
+    width: 100%;
+    grid-area: img;
+    box-shadow: 0 0 12px;
+    margin-bottom: 2vh;
   }
 }
